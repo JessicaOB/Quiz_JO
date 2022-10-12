@@ -5,38 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Timed Goonies Fan Quiz</title>
 </head>
 
 <body>
-    <div class="scoreboard">
-        <!-- Div to hold our link to high scores -->
-        <link>
-    </div>
-    <div class="countdown">
-        <!-- Div to hold our timer -->
-    </div>
-
+    <header>
+        <div class="scoreboard">
+            <!-- Div to hold our link to high scores -->
+            <link>
+            <ul>High Scores</ul>
+        </div>
+        <p class="countdown" style="display: none;">
+            <!-- Div to hold our timer -->
+        </p>
+    </header>
+    <br>
     <main>
         <!-- Wrapper div to hold the rest of the content on our screen -->
         <section>
+            <h1 id="quiz-title">Timed Goonies Fan Quiz</h1>
+            <p id="quiz-subtitle">Answer the questions before the countdown is up. Incorrect answers will deduct 5 seconds from your time!</p>
+            <button class="start-quiz">Start Quiz</button>
             <!-- Div for the start screen -->
         </section>
 
-        <section>
-            <!-- Div for the questions -->
+        <section id="quiz-questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices"></div> 
+                <!-- Div for the questions, think about adding "hidden" to the CSS -->
         </section>
 
-        <section>
+        <section class="over">
+            <form id="hide" style="display: none;">
+                <div>
+                    <label for="initials">Enter Initials</label>
+                    <input type="text" id="initials" name="initials">
+                </div>
+                <div>
+                    <button class="save-score">Save Score</button>
+                </div>
+            </form>
             <!-- Div for the end screen -->
         </section>
 
-        <div>
+        <div class="feedback">
             <!-- Div to dynamically display feedback to the user -->
         </div>
 
     </main>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,11 @@
+:root {
+    --pink: #ff48c4;
+    --blue: #2bd1fc;
+    --yellow: #f3ea5f;
+    --purple: #c04df9;
+    --green: #00ff00; 
+}
+
+h1 {
+color: var(--purple)
+}
